@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body
+{
+    background: #b7b8ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1200px;
+    margin: 50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgb(0,0,0, 0.5);
+}
+.left-side
+{
+    position: relative;
+    background: linear-gradient(to bottom right, #d2a878, #f8cf97,#d2a888);
+    padding: 40px;
+}
+
+.right-side
+{
+    position: relative;
+    background: #d6d8d3;
+    padding: 40px;
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+.imgBX{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.imgBX img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2{
+    color: rgb(71, 69, 69);
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.6em;
+}
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 500;
+}
+.contactinfo .title{
+    color: rgb(71, 69, 69);
+    font-size: 1.5rem;
+    margin-top: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.6em;
+}
+.contactinfo{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+.contactinfo ul{
+    list-style-type: none;
+    color: rgb(71, 69, 69);
+    font-size:0.9rem;
+    margin-top: 9px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.6em;
+}
+.contactinfo li{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+ul li .phone{
+    font-weight: bold;
+}
+ul li .number{
+    font-weight: 500;
+}
+ul li .mail{
+    margin-top: 9px;
+    font-weight: bold;
+}
+ul li .address{
+    font-weight: 500;
+}
+ul li .website{
+    margin-top: 9px;
+    font-weight: bold;
+}
+ul li .webAddress{
+    font-weight: 500;
+}
+ul li .homeAddress{
+    margin-top: 9px;
+    font-weight: bold;
+}
+ul li .address-address{
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.skillsh3{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(71, 69, 69);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.6em;
+}
+.skills{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+.skills  li:last-child{
+    margin-bottom: 20px;
+}
+.hobbies .hobbies-text{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(71, 69, 69);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.6em;
+}
+.skills .percent{
+    margin-bottom: 9px;
+    display: flex; 
+    justify-content: center; 
+    flex-direction: row;
+    position: relative;
+    height: 6px;
+    width: 100%;
+    background-color: #9c9d9f;
+     display: block; 
+    margin-top: 9px;
+}
+.skills .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgb(94, 93, 93);
+}
+table{
+    border: 2px solid;
+    width: 100%;
+}
+td{
+    text-align: center;
+    border: 2px solid;
+    padding: 0.8em;
+}
+.skills ul{
+    list-style-type: none;
+    color: rgb(71, 69, 69);
+    font-size:0.9rem;
+    margin-top: 9px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.6em;
+}
+.skills li .text,.percent{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.profile{
+    text-align: left;
+    padding-bottom: 10px;
+    border-left: 3px solid rgba(0, 0, 0, 0.4);
+}
+.profile .profile-text{
+    text-align: left;
+    padding-bottom: 12px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-left: 1.0em;
+    font-weight: 600;
+    line-height: 1.6em;
+    color: rgb(17, 17, 17);
+}
+.profile-info{
+    font-size: 0.8em;
+    font-weight: 500;
+    color: rgb(71, 69, 69);
+    padding-left: 1.9em;
+    line-height: 1.6em;
+}
+.experiences{
+    border-left: 3px solid rgba(0, 0, 0, 0.4);
+}
+.experiences h2{
+    text-align: left;
+    padding-bottom: 12px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-left: 1.0em;
+    font-weight: 600;
+    line-height: 1.6em;
+    color: rgb(17, 17, 17);
+}
+.experiences-info1 .title{
+    font-size: 0.8em;
+    font-weight: 600;
+    color: rgb(17, 17, 17);
+    text-transform: uppercase;
+    padding-left: 1.9em;
+    line-height: 1.6em;
+}
+.experiences-info1 .time{
+    font-size: 0.8em;
+    font-weight: 600;
+    color: rgb(17, 17, 17);
+    text-transform: uppercase;
+    float: right;
+    padding-left: 1.9em;
+    line-height: 1.6em;
+}
+
+/* .experiences-info1{
+    font-size: 0.8em;
+    font-weight: 300;
+    color: rgb(71, 69, 69);
+    padding-left: 1.9em;
+    line-height: 1.6em;
+} */
+
+.experiences-text{
+    padding-top: 0.9em;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: rgb(71, 69, 69);
+    padding-left: 1.9em;
+    line-height: 1.6em;
+}
+.education{
+    border-left: 3px solid rgba(0, 0, 0, 0.4);
+}
+.education h2{
+    text-align: left;
+    padding-bottom: 12px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-left: 1.0em;
+    font-weight: 600;
+    line-height: 1.6em;
+    color: rgb(17, 17, 17);
+}
+.education-info1 .title{
+    font-size: 0.8em;
+    font-weight: 600;
+    color: rgb(17, 17, 17);
+    text-transform: uppercase;
+    padding-left: 1.9em;
+    line-height: 1.6em;
+}
+.education-info1 .time{
+    font-size: 0.8em;
+    font-weight: 600;
+    color: rgb(17, 17, 17);
+    text-transform: uppercase;
+    float: right;
+    padding-left: 1.9em;
+    line-height: 1.6em;
+}
+
+/* .experiences-info1{
+    font-size: 0.8em;
+    font-weight: 300;
+    color: rgb(71, 69, 69);
+    padding-left: 1.9em;
+    line-height: 1.6em;
+} */
+
+.education-text{
+    padding-top: 0.9em;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: rgb(71, 69, 69);
+    padding-left: 1.9em;
+    line-height: 1.6em;
+}
+.connect{
+    border-left: 3px solid rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    width: 50%;
+}
+.connect h2{
+    text-align: left;
+    padding-bottom: 12px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-left: 1.0em;
+    font-weight: 600;
+    line-height: 1.6em;
+    color: rgb(17, 17, 17);
+}
+.linkedin {
+    padding-top: 1em;
+}
+#Layer_2{
+    margin-left: 1.5em;
+    height: 20px;
+    width: 20px;
+}
+.linkedin-text{
+    margin-left: 1.0em;
+    position: absolute;
+}
+.instagram{
+    margin-top: 1em;
+    margin-left: 1.5em;
+    height: 20px;
+    width: 20px;
+}
+.instagram-text{
+    margin-left: 1.0em;
+    position: absolute;
+    padding-top: 1em;
+}
+.web{
+    margin-top: 1em;
+    margin-left: 1.5em;
+    height: 20px;
+    width: 20px;
+}
+.web-text{
+    margin-left: 1em;
+    padding-top: 1em;
+    position: absolute;
+}
+.near
+{
+    position: relative;
+    background:  #d2a878;
+    padding-left: 1.6em;
+    border-left: 3px solid rgba(0, 0, 0, 0.4);
+}
+.main
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+.peferences{
+    padding-top: 0.9em;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: rgb(71, 69, 69);
+    line-height: 1.6em;
+}
+.main-hobbies{
+    padding-top: 0.9em;
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(71, 69, 69);
+    line-height: 1.6em;
+}
+.Music{
+    float: right;
+}
+.gym{
+    float: right;
+}
+.Photography{
+    float: right;
+}
+
+@media (max-width: 1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .main {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .near{
+        margin-top: 3.5em;
+    }
+}
